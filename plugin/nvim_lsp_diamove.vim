@@ -1,0 +1,7 @@
+command! -count=1 Dabove lua require'nvim_lsp_diamove'.jump_above(<count>)
+command! -count=1 Dbelow lua require'nvim_lsp_diamove'.jump_below(<count>)
+
+if !get(g:, 'nvim_lsp_diamove_disable_default_mapping', v:false)
+  noremap <expr> [d '<cmd>' . v:count1 . 'Dabove<CR>'
+  noremap <expr> ]d '<cmd>' . v:count1 . 'Dbelow<CR>'
+endif
