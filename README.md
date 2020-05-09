@@ -11,7 +11,9 @@ Install the plugin with your favorite manager tool. Here is an example using
 [dein.vim](https://github.com/Shougo/dein.vim):
 
 ```vim
-call dein#add('weilbith/nvim-lsp-diamove')
+call dein#add('weilbith/nvim-lsp-diamove', {
+      \ 'on_cmd': ['Dabove', 'Dbelow'],
+      \ })
 ```
 
 It is recommended to use install the
