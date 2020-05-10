@@ -1,50 +1,49 @@
-*nvim_lsp_diamove.txt*			       Move trough the LSP diagnostics
+*lsp_diamove.txt*			       Move trough the LSP diagnostics
 
 Version:  0.1
 Author:   Thore Weilbier <thore@weilbier.net>
 License:  MIT
 
 ==============================================================================
-					  *nvim_lsp_diamove_table_of_contents*
+					       *lsp_diamove_table_of_contents*
 TABLE OF CONTENTS~
 
-Introduction ................................. |nvim_lsp_diamove_introduction|
-Usage ............................................... |nvim_lsp_diamove_usage|
-Commands ......................................... |nvim_lsp_diamove_commands|
-Mappings ......................................... |nvim_lsp_diamove_mappings|
-Variables ....................................... |nvim_lsp_diamove_variables|
-TODO-List ....................................... |nvim_lsp_diamove_todo_list|
+Introduction ...................................... |lsp_diamove_introduction|
+Usage .................................................... |lsp_diamove_usage|
+Commands .............................................. |lsp_diamove_commands|
+Mappings .............................................. |lsp_diamove_mappings|
+Variables ............................................ |lsp_diamove_variables|
+TODO-List ............................................ |lsp_diamove_todo_list|
 
 
 ==============================================================================
-					      *nvim_lsp_diamove_introduction*
+						    *lsp_diamove_introduction*
 INTRODUCTION~
 
 This plugin simple adds the missing command to navigate through the
 diagnostics by the |lsp| client. To avoid the need of pushing the diagnostics
-to the location list to get access to movement commands, this plugin adds
-them directly. In addition to |:cabove|, |:cbelow|, |:labove| and |:lbelow|
-(for the quickfix and location list respectively), the new commands |:Dabove|
-and |:Dbelow| jump in the diagnostics list of the current buffer. There is no
-need to save the buffer in-between. These commands always act on the current
-state of the last pushed diagnostics. In advantage to the native commands, the
-ones for the diagnostics secure the sort order (while the native only assume
-a given order). Also are they able to jump between entries within the same
-line.
+to the location list to get access to movement commands, this plugin adds them
+directly. In addition to |:cabove|, |:cbelow|, |:labove| and |:lbelow| (for
+the quickfix and location list respectively), the new commands |:Dabove| and
+|:Dbelow| jump in the diagnostics list of the current buffer. There is no need
+to save the buffer in-between. These commands always act on the current state
+of the last pushed diagnostics. In advantage to the native commands, the ones
+for the diagnostics secure the sort order (while the native only assume
+  a given order). Also are they able to jump between entries within the same
+  line.
 
 
 ==============================================================================
-						      *nvim_lsp_diamove_usage*
+							   *lsp_diamove_usage*
 USAGE~
 
-Simply call the |nvim_lsp_diamove_commands| or use the
-|nvim_lsp_diamove_mappings| directly to jump the next error, hint or any other
-diagnostic by the language server. Always relative to the current cursors
-position.
+Simply call the |lsp_diamove_commands| or use the |lsp_diamove_mappings|
+directly to jump the next error, hint or any other diagnostic by the language
+server. Always relative to the current cursors position.
 
 
 ==============================================================================
-						   *nvim_lsp_diamove_commands*
+							*lsp_diamove_commands*
 COMMANDS~
 
 |:[count]Dabove|
@@ -66,7 +65,7 @@ COMMANDS~
 
 
 ==============================================================================
-						   *nvim_lsp_diamove_mappings*
+							*lsp_diamove_mappings*
 
 MAPPINGS~
 
@@ -83,16 +82,16 @@ MAPPINGS~
 
 
 ==============================================================================
-						  *nvim_lsp_diamove_variables*
+						       *lsp_diamove_variables*
 VARIABLES~
 
-|g:nvim_lsp_diamove_disable_default_mapping|       boolean (default `v:false`)
+|g:lsp_diamove_disable_default_mapping|		   boolean (default `v:false`)
 
-  Disables the automatic establishment of the |nvim_lsp_diamove_mappings|.
+  Disables the automatic establishment of the |lsp_diamove_mappings|.
 
 
 ==============================================================================
-						  *nvim_lsp_diamove_todo_list*
+						       *lsp_diamove_todo_list*
 TODO-List~
 
     - allow to merge diagnostics with location list to integrate external
