@@ -46,6 +46,7 @@ server. Always relative to the current cursors position.
 							*lsp_diamove_commands*
 COMMANDS~
 
+								    *:Dabove*
 |:[count]Dabove|
 
   Go to the [count] diagnostic entry above the current cursor position in the
@@ -55,6 +56,7 @@ COMMANDS~
   entry in the file and reports a message.
 
 
+								     *:Dbelow*
 |:[count]Dbelow|
 
   Go to the [count] diagnostic entry below the current cursor position in the
