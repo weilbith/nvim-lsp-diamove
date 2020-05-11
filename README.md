@@ -1,4 +1,4 @@
-# NVim LSP DiaMove
+# NeoVim Language Server Diagnostic Movements
 
 Add the missing navigation commands for the LSP diagnostics in a buffer.
 This is an addition to the already existing `:cabove`, `:cbelow`, `:labove` and
