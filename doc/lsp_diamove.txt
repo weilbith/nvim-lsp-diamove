@@ -1,6 +1,6 @@
 *lsp_diamove.txt*			       Move trough the LSP diagnostics
 
-Version:  0.1
+Version:  0.2
 Author:   Thore Weilbier <thore@weilbier.net>
 License:  MIT
 
