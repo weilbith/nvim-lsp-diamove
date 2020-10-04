@@ -1,3 +1,9 @@
+if exists('g:loaded_lsp_diamove')
+  finish
+endif
+
+let g:loaded_lsp_diamove = 1
+
 command! -count=1 Dabove lua require'lsp_diamove'.jump_above(<count>)
 command! -count=1 Dbelow lua require'lsp_diamove'.jump_below(<count>)
 
