@@ -1,3 +1,9 @@
+# !!!DEPRACTED!!!
+
+**With the development of NeoVim all features of this plugin have become part of the core. Please read the commit message for  version [f75be5e](https://github.com/neovim/neovim/commit/f75be5e9d510d5369c572cf98e78d9480df3b0bb) to get further details.**
+
+---
+
 # NeoVim Language Server Diagnostic Movements
 
 Add the missing navigation commands for the LSP diagnostics in a buffer.
